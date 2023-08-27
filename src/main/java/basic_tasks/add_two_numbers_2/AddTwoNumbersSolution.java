@@ -1,4 +1,4 @@
-package add_two_numbers_2;
+package basic_tasks.add_two_numbers_2;
 
 public class AddTwoNumbersSolution {
 
