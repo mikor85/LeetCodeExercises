@@ -1,4 +1,4 @@
-package basic_tasks.reverse_linked_list_206;
+package Easy.reverse_linked_list_206;
 
 public class ReverseLinkedList {
 
