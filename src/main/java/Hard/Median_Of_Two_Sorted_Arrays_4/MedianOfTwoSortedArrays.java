@@ -1,4 +1,4 @@
-package Hard.median_Of_Two_Sorted_Arrays;
+package Hard.Median_Of_Two_Sorted_Arrays_4;
 
 
 // Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.

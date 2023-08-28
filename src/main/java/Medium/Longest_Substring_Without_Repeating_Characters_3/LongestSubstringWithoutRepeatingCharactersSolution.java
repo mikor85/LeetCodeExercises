@@ -1,4 +1,4 @@
-package Medium.longest_substring_without_repeating_characters_3;
+package Medium.Longest_Substring_Without_Repeating_Characters_3;
 
 import java.util.*;
 

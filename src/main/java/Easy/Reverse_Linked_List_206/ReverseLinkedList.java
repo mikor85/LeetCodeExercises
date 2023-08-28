@@ -1,4 +1,4 @@
-package Easy.reverse_linked_list_206;
+package Easy.Reverse_Linked_List_206;
 
 public class ReverseLinkedList {
 

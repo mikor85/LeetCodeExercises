@@ -1,4 +1,4 @@
-package Medium.add_two_numbers_2;
+package Medium.Add_Two_Numbers_2;
 
 public class AddTwoNumbersSolution {
 
