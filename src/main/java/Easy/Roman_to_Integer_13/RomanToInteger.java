@@ -81,4 +81,34 @@ public class RomanToInteger {
 
         return sum;
     }
+
+    public int romanToIntVersion2(String s) {
+
+        Map<Character, Integer> romainMap = new HashMap<>();
+
+        // Fill the map with corresponding values
+        romainMap.put('I', 1);
+        romainMap.put('V', 5);
+        romainMap.put('X', 10);
+        romainMap.put('L', 50);
+        romainMap.put('C', 100);
+        romainMap.put('D', 500);
+        romainMap.put('M', 1000);
+
+        // Calculate the sum of input Romain Number
+        int currentValue;
+        int previousValue = 0;
+        int sum = 0;
+        for (int i = s.length() - 1; i >= 0; i--) {
+            currentValue = romainMap.get(s.charAt(i));
+            if (currentValue >= previousValue) {
+                sum += currentValue;
+            } else {
+                sum -= currentValue;
+            }
+            previousValue = currentValue;
+        }
+
+        return sum;
+    }
 }
