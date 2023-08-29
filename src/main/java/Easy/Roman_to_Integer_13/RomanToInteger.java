@@ -51,7 +51,7 @@ import java.util.Map;
  * */
 public class RomanToInteger {
 
-    public int romanToInt(String s) {
+    public static int romanToInt(String s) {
 
         Map<Character, Integer> romainMap = new HashMap<>();
 
@@ -82,7 +82,7 @@ public class RomanToInteger {
         return sum;
     }
 
-    public int romanToIntVersion2(String s) {
+    public static int romanToIntVersion2(String s) {
 
         Map<Character, Integer> romainMap = new HashMap<>();
 
