@@ -45,7 +45,7 @@ public class ReverseInteger {
         result.append(inputNumberStr);
         long resultInt = Long.parseLong(result.toString());
 
-        if (resultInt >= Math.pow(-2, 31) && resultInt <= Math.pow(2, 31) - 1) {
+        if (resultInt >= Integer.MIN_VALUE && resultInt <= Integer.MAX_VALUE) {
             return (int) resultInt;
         }
 
