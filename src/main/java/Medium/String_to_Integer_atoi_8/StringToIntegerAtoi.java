@@ -71,12 +71,14 @@ public class StringToIntegerAtoi {
 
     public static int myAtoi(String s) {
 
+        // Remove spaces
         s = s.trim();
 
         if (s.isEmpty()) {
             return 0;
         }
 
+        // Check for the sign
         int sign = 1;
         if (s.charAt(0) == '-') {
             sign = -1;
@@ -85,6 +87,7 @@ public class StringToIntegerAtoi {
             s = s.substring(1);
         }
 
+        // Read all digits
         double num = 0;
         int i = 0;
         while (i < s.length() && Character.isDigit(s.charAt(i))) {
@@ -92,8 +95,10 @@ public class StringToIntegerAtoi {
             i++;
         }
 
+        // Change the sign of number
         num = num * sign;
 
+        // Check for the range of Integer
         if (num < Integer.MIN_VALUE) {
             return Integer.MIN_VALUE;
         }
