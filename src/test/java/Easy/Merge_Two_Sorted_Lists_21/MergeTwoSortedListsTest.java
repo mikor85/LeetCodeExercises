@@ -24,9 +24,5 @@ public class MergeTwoSortedListsTest {
         list21.next = list22;
 
         assertEquals("[1,1,2,3,4,4]", MergeTwoSortedLists.mergeTwoLists(head1, head2).toString());
-
-        // Test 2
-
-
     }
 }
