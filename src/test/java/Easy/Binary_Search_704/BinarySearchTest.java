@@ -13,5 +13,10 @@ public class BinarySearchTest {
         int target1 = 9;
         assertEquals(4, BinarySearch.search(nums1, target1));
         assertEquals(4, BinarySearch.searchRecursive(nums1, 0, nums1.length - 1, target1));
+
+        int[] nums2 = new int[]{5};
+        int target2 = 5;
+        assertEquals(0, BinarySearch.search(nums2, target2));
+        //assertEquals(0, BinarySearch.searchRecursive(nums2, 0, nums2.length - 1, target2));
     }
 }

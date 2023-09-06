@@ -31,7 +31,7 @@ public class BinarySearch {
         int left = 0;
         int right = nums.length - 1;
         int mid;
-        while (left < right){
+        while (left <= right){
             mid = (right + left) / 2;
             if (nums[mid] == target){
                 return mid;
