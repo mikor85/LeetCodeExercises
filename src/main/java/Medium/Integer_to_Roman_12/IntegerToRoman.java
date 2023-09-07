@@ -53,6 +53,7 @@ import java.util.Map;
 
 public class IntegerToRoman {
 
+    // Map
     public static String intToRoman(int num) {
 
         Map<Integer, String> intToRomMap = new HashMap<>();
@@ -91,7 +92,7 @@ public class IntegerToRoman {
         int divider = 10;
         while (num != 0) {
             int remainder = num % divider;
-            if (remainder == 0){
+            if (remainder == 0) {
                 divider *= 10;
                 continue;
             }
@@ -101,5 +102,19 @@ public class IntegerToRoman {
             num -= remainder;
         }
         return romanNumber.reverse().toString();
+    }
+
+    // Array and String
+    public static String intToRomanArray(int num) {
+        int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        String[] symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < values.length; i++) {
+            while (num >= values[i]) {
+                result.append(symbols[i]);
+                num -= values[i];
+            }
+        }
+        return result.toString();
     }
 }
